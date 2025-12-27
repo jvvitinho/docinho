@@ -23,6 +23,7 @@
     html, body {
       height: auto;
       min-height: 100%;
+      overflow-y: auto;   /* permite rolagem vertical */
     }
     body {
       margin: 0;
@@ -33,7 +34,6 @@
         radial-gradient(900px 500px at 90% 10%, #ffeef7 0%, transparent 55%),
         linear-gradient(135deg, var(--bg1) 0%, var(--bg2) 50%, var(--bg3) 100%);
       -webkit-font-smoothing: antialiased;
-      overflow-y: auto;
     }
 
     .hearts {
@@ -64,12 +64,12 @@
     }
 
     .wrap {
-      position: relative; z-index: 2;
-      display: flex; align-items: center; justify-content: center;
-      min-height: 100vh; padding: 28px 20px 34px;
+      display: block;      /* deixa o conteúdo fluir verticalmente */
+      padding: 28px 20px 34px;
     }
     .card {
-      width: 100%; max-width: 720px;
+      margin: 0 auto;      /* centraliza horizontalmente */
+      max-width: 720px;
       background: linear-gradient(180deg, #ffffffee, #fffafcdd);
       backdrop-filter: blur(8px);
       border-radius: 22px;
@@ -117,7 +117,7 @@
       width: 20px; height: 20px; border-radius: 4px;
       background: var(--glass); border: 1px solid #ffe0ef;
       transform: rotate(45deg);
-      box-shadow: 6px 6px 12px rgba(0, 0, 0, .03);
+      box-shadow: 6px 6px 12px rgba(0,0,0,.03);
     }
 
     .text {
@@ -183,4 +183,5 @@
             Nos caminhos da vida, há encontros que não se apagam. O nosso foi marcado por luz e alegria, e mesmo que a distância hoje nos separe, sinto que o destino ainda guarda possibilidades para nós.
             <br><br>
             As provações que enfrentamos revelaram nossas fraquezas, mas também mostraram a força do sentimento que nos uniu. O tempo, com sua sabedoria, abre portas para novos começos, e acredito que ainda podemos transformar o que nos feriu em aprendizado.
-            <br
+            <br><br>
+            Sinto que há sinais de prosperidade e de esperança, como se o universo nos lembrasse de que
